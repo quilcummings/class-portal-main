@@ -1,0 +1,113 @@
+body, html {
+    padding: 0;
+    padding-bottom: 17rem;
+    margin: 0;
+    background-color: #29282d;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    height: 15rem;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: .3rem;
+    text-align: center;
+    padding: 3rem;
+    
+}
+.flex-item {
+    flex-wrap: wrap;
+    flex-basis: 20rem;
+    flex-shrink: 6;
+    flex-grow: 2;
+    height: 15rem;
+    padding: 2rem;
+    margin: 2rem;
+
+    border-radius: 30px;
+}
+
+.flex-item:hover {
+    border-radius: 70px;
+    height: 17rem;    
+}
+
+#page-title {
+    padding-top: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: .4rem;
+    text-align: center;
+    color: #dbd3cf;
+    font-weight: 200;
+    font-size: 15px;
+}
+#class-number {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: .4rem;
+    text-align: center;
+    color: #dbd3cf;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+#first-child {
+    background-color: #d3927d;
+}
+#second-child {
+    background-color: #ceba7c;
+}
+#third-child {
+    background-color: #9f838e;
+}
+#fourth-child {
+    background-color: #84a094;
+}
+
+#proj-two {
+    background-color: #bfa499;
+}
+#proj-three {
+    background-color: #db8b66;
+}
+#proj-four {
+    background-color: #b2745f;
+}
+
+#assign {
+    background-color: #dbcda2;
+}
+#assign-three {
+    background-color: #c6b06b;
+}
+#assign-four {
+    background-color: #dad2a1;
+}
+
+#code {
+    background-color: #b5a0a7;
+}
+#code-two {
+    background-color: #876772;
+}
+#code-four {
+    background-color: #aa9199;
+}
+
+#process {
+    background-color: #769587;
+}
+#process-two {
+    background-color: #5e7a6d;
+}
+#process-three {
+    background-color: #a1b6ac;
+}
+
+a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none; 
+}
