@@ -11,8 +11,6 @@ let fourLev = "— 4,000 m"
 let fiveLev = "— 10,000 m"
 let deeep = "— 11,000 m"
 
-let bgm;
-
 let pos = 0;
 
 let num = 5;
@@ -131,10 +129,9 @@ function mouseClicked() {
 }
 
 
+
 function setup() {
 
-  bgm = loadSound('assets/bgm.mp3');
-  bgm.loop();
 
 
   createCanvas(windowWidth, windowHeight);
