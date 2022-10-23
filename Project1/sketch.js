@@ -242,103 +242,104 @@ function draw() {
     text(deeep, -2, windowHeight*10-20-pos);
   }
 
+  mouseXS = mouseX+5;
   // display first layer info
   if (bools[0]==true)
   {
-    text("JELLYFISH (Scyphozoa)\nPrehistoric marine creatures that have existed in oceans for\nmillions of years. They have no bones, brains, heart, or eyes.", mouseX, mouseY);
+    text("JELLYFISH (Scyphozoa)\nPrehistoric marine creatures that have existed in oceans for\nmillions of years. They have no bones, brains, heart, or eyes.", mouseXS, mouseY);
   }
   if (bools[1]==true)
   {
-    text("TUNA (Thunnus and Katsuwonus species)\nCan reach up to 10 feet in length. Often migrate across \nentire oceans. One of the most commercially valuable fish.", mouseX, mouseY);
+    text("TUNA (Thunnus and Katsuwonus species)\nCan reach up to 10 feet in length. Often migrate across \nentire oceans. One of the most commercially valuable fish.", mouseXS, mouseY);
   }
   if (bools[2]==true)
   {
-    text("TURTLE (Testudines)\nCan be found on both land and in the sea, there are over 300 different \nspecies of Turtles. Unline other reptiles, turtles do not hibernate.", mouseX, mouseY);
+    text("TURTLE (Testudines)\nCan be found on both land and in the sea, there are over 300 different \nspecies of Turtles. Unline other reptiles, turtles do not hibernate.", mouseXS, mouseY);
   }
   if (bools[3]==true)
   {
-    text("STRINGRAY (Myliobatoidei)\nFound in shallow coastal waters, with coloration that blends in \nwith the ocean floor, camouflaging them from predators.", mouseX, mouseY);
+    text("STRINGRAY (Myliobatoidei)\nFound in shallow coastal waters, with coloration that blends in \nwith the ocean floor, camouflaging them from predators.", mouseXS, mouseY);
   }
   if (bools[4]==true)
   {
-    text("SHARK (Selachimorpha)\nBoneless, ancient creatures that are made mostly of cartilage. \nThere are over 500 living species of sharks.", mouseX, mouseY);
+    text("SHARK (Selachimorpha)\nBoneless, ancient creatures that are made mostly of cartilage. \nThere are over 500 living species of sharks.", mouseXS, mouseY);
   }
 
   
   //display second layer info
   if (bools2[0]==true)
   {
-    text("BRISTLEMOUTH (Cyclothone)\nSmall, glowing fish that have sharp teeth. Many are smaller \nthan 2 inches, but there are more bristlemoth than any other vertibrate on Earth.", mouseX, mouseY);
+    text("BRISTLEMOUTH (Cyclothone)\nSmall, glowing fish that have sharp teeth. Many are smaller \nthan 2 inches, but there are more bristlemoth than any other vertibrate on Earth.", mouseXS, mouseY);
   }
   if (bools2[1]==true)
   {
-    text("SQUID (Teuthida)\nOver 300 species of squid, and they can be found in every ocean. \nThey range greatly in size and have short lifespans. (Around 1 year)", mouseX, mouseY);
+    text("SQUID (Teuthida)\nOver 300 species of squid, and they can be found in every ocean. \nThey range greatly in size and have short lifespans. (Around 1 year)", mouseXS, mouseY);
   }
   if (bools2[2]==true)
   {
-    text("HATCHETFISH (Argyropelecus Gigas)\nBioluminescent fish that are named due to their \nhatchetlike shape. Typically found in temperate waters.", mouseX, mouseY);
+    text("HATCHETFISH (Argyropelecus Gigas)\nBioluminescent fish that are named due to their \nhatchetlike shape. Typically found in temperate waters.", mouseXS, mouseY);
   }
   if (bools2[3]==true)
   {
-    text("PELICAN EEL (Eurypharynx pelicanoides)\nVery poor eyesight, and uses a light on its \nrear fins to lure in prey.", mouseX, mouseY);
+    text("PELICAN EEL (Eurypharynx pelicanoides)\nVery poor eyesight, and uses a light on its \nrear fins to lure in prey.", mouseXS, mouseY);
   }
   if (bools2[4]==true)
   {
-    text("OCTOPUS (Octopoda)\nHighly intelligent and skilled at camouflage, with soft \nbodies that allow them to fit into very small crevices.", mouseX, mouseY);
+    text("OCTOPUS (Octopoda)\nHighly intelligent and skilled at camouflage, with soft \nbodies that allow them to fit into very small crevices.", mouseXS, mouseY);
   }
 
   //display third layer info
   if (bools3[0]==true)
   {
-    text("LANTERFISH (Myctophidae)\nA bioluminescent fish that uses light to attract both \nfood and mates. There are over 200 different species of lanternfish.", mouseX, mouseY);
+    text("LANTERFISH (Myctophidae)\nA bioluminescent fish that uses light to attract both \nfood and mates. There are over 200 different species of lanternfish.", mouseXS, mouseY);
   }
   if (bools3[1]==true)
   {
-    text("DRAGONFISH (Pegasidae)\nSometimes refered to as a Sea Moth, the Dragonfish is a \nsmall, armoured fish with winglike fins.", mouseX, mouseY);
+    text("DRAGONFISH (Pegasidae)\nSometimes refered to as a Sea Moth, the Dragonfish is a \nsmall, armoured fish with winglike fins.", mouseXS, mouseY);
   }
   if (bools3[2]==true)
   {
-    text("VAMPIRE SQUID (Vampyroteuthidae)\nThe only living creature in its scientific family, \nthe Vampire Squid is actually not a squid at all.", mouseX, mouseY);
+    text("VAMPIRE SQUID (Vampyroteuthidae)\nThe only living creature in its scientific family, \nthe Vampire Squid is actually not a squid at all.", mouseXS, mouseY);
   }
   if (bools3[3]==true)
   {
-    text("VIPERFISH (Chauliodus)\nA bioluminescent fish that uses light to attract prey.\n Typically small, but with large fangs.", mouseX, mouseY);
+    text("VIPERFISH (Chauliodus)\nA bioluminescent fish that uses light to attract prey.\n Typically small, but with large fangs.", mouseXS, mouseY);
   }
   if (bools3[4]==true)
   {
-    text("ANGLERFISH (Lophiiformes)\nEquipped with a fishingpole like appendage that has \na glowing light at the end. Anglerfish use this light to attract prety\nclose enough for them to swallow.", mouseX, mouseY);
+    text("ANGLERFISH (Lophiiformes)\nEquipped with a fishingpole like appendage that has \na glowing light at the end. Anglerfish use this light to attract prety\nclose enough for them to swallow.", mouseXS, mouseY);
   }
 
   //display fourth layer info
   if (bools4[0]==true)
   {
-    text("CUSK-EEL (Ophidiidae)\nSome species can grow up to 5 feet long, but the majority \nwill not exceed 2 feet. There are about 30 different species.", mouseX, mouseY);
+    text("CUSK-EEL (Ophidiidae)\nSome species can grow up to 5 feet long, but the majority \nwill not exceed 2 feet. There are about 30 different species.", mouseXS, mouseY);
   }
   if (bools4[1]==true)
   {
-    text("Mariana Snailfish (Pseudoliparis Swirei)\nFound in the Mariana Trench, these fish are \nlight in color and small in size.", mouseX, mouseY);
+    text("Mariana Snailfish (Pseudoliparis Swirei)\nFound in the Mariana Trench, these fish are \nlight in color and small in size.", mouseXS, mouseY);
   }
   if (bools4[2]==true)
   {
-    text("PEARLFISH (Carapidae)\nPearlfish are translucent fish that live inside the bodies of \nSea Cucumbers, and can be found at depths up to 2,000 meters.", mouseX, mouseY);
+    text("PEARLFISH (Carapidae)\nPearlfish are translucent fish that live inside the bodies of \nSea Cucumbers, and can be found at depths up to 2,000 meters.", mouseXS, mouseY);
   }
   if (bools4[3]==true)
   {
-    text("DUMBO OCTOPUS (Grimpoteuthis)\nThe deepest living species of Octopus, the Dumbo Octopus \nis very rare. They are able to survive in very extreme conditions, \nsurviving near freezing temperatures and darkness.", mouseX, mouseY);
+    text("DUMBO OCTOPUS (Grimpoteuthis)\nThe deepest living species of Octopus, the Dumbo Octopus \nis very rare. They are able to survive in very extreme conditions, \nsurviving near freezing temperatures and darkness.", mouseXS, mouseY);
   }
   if (bools4[4]==true)
   {
-    text("TRIPOD FISH (Bathypterois Grallator)\nTripod fish are eqiupped with three bony fins that \nthey use to stand. They are near blind in the dark depths of the ocean, \nbut they use their fins to feel vibrations on the ground.", mouseX, mouseY);
+    text("TRIPOD FISH (Bathypterois Grallator)\nTripod fish are eqiupped with three bony fins that \nthey use to stand. They are near blind in the dark depths of the ocean, \nbut they use their fins to feel vibrations on the ground.", mouseXS, mouseY);
   }
 
   //display fifth layer info
   if (bools5[0]==true)
   {
-    text("POLYNOID SCALE WORM (Polynoidae)\nGenerally live on the ocean floor, hiding under rocks when they aren't hunting.", mouseX, mouseY);
+    text("POLYNOID SCALE WORM (Polynoidae)\nGenerally live on the ocean floor, hiding under rocks when they aren't hunting.", mouseXS, mouseY);
   }
   if (bools5[1]==true)
   {
-    text("YAP HADAL SNAILFISH (Pseudoliparis Amblystomopsis)\nHas extra genes for reparing its DNA, making survival easier at the extreme depths that they live.\nClosely related to the Mariana Hadal Snailfish.", mouseX, mouseY);
+    text("YAP HADAL SNAILFISH (Pseudoliparis Amblystomopsis)\nHas extra genes for reparing its DNA, making survival easier at the extreme depths that they live.\nClosely related to the Mariana Hadal Snailfish.", mouseXS, mouseY);
   }
   
 
