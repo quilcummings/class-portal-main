@@ -242,7 +242,7 @@ function draw() {
     text(deeep, -2, windowHeight*10-20-pos);
   }
 
-  mouseXS = mouseX+50;
+  mouseXS = mouseX+25;
   // display first layer info
   if (bools[0]==true)
   {
