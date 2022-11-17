@@ -1,0 +1,17 @@
+{
+    "name": "threejs",
+    "version": "1.0.0",
+    "main": "main.js",
+    "scripts": {
+        "dev": "npx parcel index.html"
+    },
+    "dependencies": {
+        "jquery": "^3.6.1",
+        "nodejs": "^0.0.0",
+        "parcel": "^2.7.0",
+        "three": "^0.146.0"
+    },
+    "devDependencies": {
+        "buffer": "^6.0.3"
+    }
+}
