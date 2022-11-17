@@ -23,10 +23,6 @@ const camera = new THREE.PerspectiveCamera(
   1000,
 );
 
-// TO DO
-// scroll to zoom
-// add text
-
 camera.position.set( 0, 0, 400);
 scene.add(camera);
 
@@ -63,7 +59,6 @@ scene.add(pointLight);
 const fs = require('fs');
 const data = fs.readFileSync('./data/2018.txt').toString();
 const myArray = data.split("\n");
-
 
 
 // coordToVector3 function from this stackoverflow post
