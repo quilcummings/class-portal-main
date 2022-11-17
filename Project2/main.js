@@ -1,3 +1,4 @@
+import { debug } from 'console';
 import * as THREE from 'three';
 
 var mouseX = 0;
@@ -6,6 +7,7 @@ var nums = [];
 var cubes = [];
 
 var pos = 0;
+var clicked = false;
 
 const scene = new THREE.Scene();
 const container = document.querySelector('#container');
@@ -26,7 +28,6 @@ const camera = new THREE.PerspectiveCamera(
 // add text
 
 camera.position.set( 0, 0, 400);
-//scene.background = new THREE.Color( 0x000 );
 scene.add(camera);
 
 container.appendChild(renderer.domElement);
@@ -94,19 +95,37 @@ for (var i = 0; i < myArray.length; i++)
     multi[0] = multi[0] * Math.pow(10, multi[1]);
     nums[i][2] = multi[0];
 
-    const vect = coordToVector3(nums[i][0], nums[i][1]);
+    if (nums[i][2] > 3000)
+    {
+      const vect = coordToVector3(nums[i][0], nums[i][1]);
 
-    const geometry = new THREE.BoxGeometry(2, 2, nums[i][2] / 200);
-    const material = new THREE.MeshBasicMaterial( {color: 0x4F5889 } );
-    cubes[i] = new THREE.Mesh( geometry, material );
+      const geometry = new THREE.BoxGeometry(2, 2, nums[i][2] / 200);
+      console.log(nums[i][2]);
 
-    cubes[i].position.x = vect.x;
-    cubes[i].position.y = vect.y;
-    cubes[i].position.z = vect.z;
+      if (nums[i][2]>100000)
+      {
+        const material = new THREE.MeshBasicMaterial( {color: 0x423F6C} );
+        cubes[i] = new THREE.Mesh( geometry, material );
 
-    cubes[i].lookAt( new THREE.Vector3(0,0,0) );
+      } else if (nums[i][2]>50000) {
+        const material = new THREE.MeshBasicMaterial( {color: 0x5A5895} );
+        cubes[i] = new THREE.Mesh( geometry, material );
 
-    globe.add( cubes[i] );
+      } else {
+        const material = new THREE.MeshBasicMaterial( {color: 0x685B8C } );
+        cubes[i] = new THREE.Mesh( geometry, material );
+      }
+      
+    
+      cubes[i].position.x = vect.x;
+      cubes[i].position.y = vect.y;
+      cubes[i].position.z = vect.z;
+
+      cubes[i].lookAt( new THREE.Vector3(0,0,0) );
+
+      globe.add( cubes[i] );
+    }
+    
   } 
 }
 
@@ -114,6 +133,16 @@ scene.add(globe);
 globe.position.z = -300;
 
 document.addEventListener('mousemove', onMouseMove, false);
+document.addEventListener('mousedown', onMouseDown, false);
+document.addEventListener('mouseup', onMouseUp, false);
+
+function onMouseDown( event ) {
+  clicked = true;
+}
+
+function onMouseUp( event ) {
+  clicked = false;
+}
 
 function onMouseMove( event ) {
    mouseX = event.clientX - window.innerWidth/2;
@@ -122,12 +151,15 @@ function onMouseMove( event ) {
 
 function loop() {
 
-  camera.position.x += (mouseX - camera.position.x)/10;
-  camera.position.y -= (mouseY + camera.position.y)/10;
+  camera.position.x += (mouseX - camera.position.x)/20;
+  camera.position.y -= (mouseY + camera.position.y)/20;
 
   camera.lookAt( scene.position );
 
-  globe.rotateY(0.03);
+  if (!clicked)
+  {
+    globe.rotateY(0.01);
+  }
 
   renderer.render(scene, camera);
 
